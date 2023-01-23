@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Manogya Assignemnt1</title>
+        <style>
+          header{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 100;
+            background-color: aliceblue;
+            display: flex;
+          }
+          h2{
+            margin-top: 10px;
+          }
+
+          nav{
+            width:max-content;
+            background-color: lavender;
+            height: 100%;
+            position: fixed;
+          }
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family:Arial, Helvetica, sans-serif;
+          }
+          main{
+            margin-left: 10em;
+          }
+        
+          #Logo{
+            font-family: cursive;
+            font-size: 150%;
+            margin: 5px;
+            color: blue;
+        }
+        li a:hover{
+          background-color: bisque;
+        }
+        img{
+        max-width: 100%;
+        }
+        #contact{
+          margin-top: 20px;
+        }
+        footer{
+          margin-left: 10em;
+        }
+        </style>
+      </head>
+      <body>
+        <div id = "wrapper"> 
+        <header>
+          <h1>
+            Manogya's personal website
+          </h1>
+        </header>
+        <nav>
+          <ul>
+            <li><a id = "Logo"> Home</a></li>
+            <li><a id = "Logo"> About me </a></li>
+            <li><a id = "Logo"> Classes Taken</a></li>   
+            <li><a id = "Logo"> Contact </a></li>   
+          </ul>
+      </nav>
+      <main>
+      <p style="font-style:normal; margin-top: 10px;"> Hi! everyone, I am Manogya Aryal. I am a Sophomore studying Computer Science at Northern Kentucky University.</p>
+        <div class="img-div">
+          <img src = "assets/img/My picture.jpg" alt = "My picture", width="150", height="150">
+          <p> <strong> My Photo </strong> </p>
+        </div> 
+
+      <div id = "Bio">
+        <p>
+          <h2> My Achievements </h2>
+        Few things in my life that I consider as achievements are coming to the states for my undergraduate degree.
+        I have always dremaed of studyin abroad and it was a very difficult process but I made it. I am having a wonderful
+        time here and I am studying CS,I am actually finding my areas of interest within Computer Sciecne degree that I waant 
+        to have a carrier in. I have made a lot of friends, new connections from faculty and staff, and from my on campus job.
+
+        I have also learnt to be more confident in myself during my time here, I have been communicating well which was 
+        one of the hardest thing for me back home in Nepal. 
+        </p>
+      </div>
+      
+      <div id = "Skills">
+        <p>
+          <h2>  My top three skills</h2>
+          <ol>
+          <div class="image">
+          <img src ="assets/img/Dance.jpeg" alt = "Me Dancing", width="150", height="150">
+          </div>
+          <li><strong>Dancing: </strong> I enjoy Dancing. It helps me calm down, and whenever I feel like I need a little break from everything,
+                           I dance. </li><br>
+          <div class="image">
+          <img src ="assets/img/Coding.jpeg" alt = "Coding", width="150", height="150">
+          </div>
+          <li><strong>Coding: </strong>This is something new to me. Something I started learning since I started my undergrad here. I am slowly developing my Skills
+                 on it. As semesters pass by, I learn more and more about it. And, the interesting thing is that there is no end point.
+                 You can keep learning in this field, and every day there is soemthing new and more interesting in the Computer Science world.</li><br>
+          <div class="image">
+          <img src ="assets/img/Communication.jpeg" alt = "Communicating", width="150", height="150">
+          </div> 
+          <li><strong>Communicating: </strong>My biggest achievement/skill I developed since I got here is learning to communicate. It could be with my professors or 
+                 my friends or at work. I had a hard time public speaking or communicating in general but I have grown so much in that area.</li>
+          </ol> 
+        </p>
+      </div>
+
+      <div id = "Hobbies">
+        <h2> My favourite things</h2>
+        <img src ="assets/img/Collegeformal.jpg" alt = "College formals", width="150", height="150">
+        <img src ="assets/img/Conference.JPG" alt = "Tri State Women in computing conference", width="150", height="150">
+        <img src ="assets/img/Tango_Charlie.jpeg" alt = "My Dogs", width="150", height="150">
+        <video controls="controls"  poster="./Baba_me_Dancing.mp4" width="400" height="200" autoplay muted>
+          <source src="assets/video/Baba_me_Dancing.mp4" type="video/mp4">
+          <a href="assets/video/Baba_me_Dancing.mp4">  </a>
+	</video>
+      </div>
+
+      <div id ="contact">
+        <form method = 'post' action="https://informatics.plus/fun/form.php" name="addForm" id="addForm">
+          <table>
+            <tr>
+            <fieldset style="width:500px">
+              <legend style="color: blue"> Contact Me </legend>
+              <label> Your Name: 
+                <input type="text" name="custName" id="custName" > <br> <br>
+              </label>
+              <label> Your Email: 
+                <input type="text" name="custEmail" id="custEmail" ><br> <br>
+              </label>
+              <label> Your Message: 
+                <input type="text" name="custMessage" id="custMessage" ><br> <br>
+              </label>	
+              <label>
+                <input name="submit" type="submit" value="Submit"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input name="reset" type="reset" value="Reset"> 
+              </label>
+            </tr>
+          </fieldset>
+          </table>
+        </form>
+      </div> 
+    </main>  
+      <footer>
+        <h2>
+          My Social
+        </h2>
+        <p> My linkedin: <a href="https://www.linkedin.com/in/manogya-aryal-aa8535238/"> Manogya's Linkedin </a><br>
+            My instrgam: <a href="https://www.instagram.com/_manogya_/"> Manogya's Instagram </a>    
+        </p>
+        </footer>
+    </div> 
+</body>
+</html>

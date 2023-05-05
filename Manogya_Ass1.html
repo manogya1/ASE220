@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title> Manogya's Website</title>
+  <style>
+      /* Style the navbar links */
+      nav a {
+        color:#333;
+        text-decoration: none;
+        padding: 10px;
+      }
+      
+      /* Style the active link */
+      nav a.active {
+        background-color: #fff;
+        color:antiquewhite;
+      }
+      
+      /* Style the content sections */
+      .section {
+        display: none;
+        padding: 20px;
+      }
+      
+      /* Style the active section */
+      .section.active {
+        display: block;
+      }
+    .about{
+      background-color:floralwhite;
+      padding: 50px;
+    }
+  img:hover {
+    transform: scale(2.0);
+    transition: all 0.2s ease-in-out;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .container img {
+    width: 25%;
+    margin: 0;
+    padding: 10px;
+  }
+  .Welcome{
+    background-color:darksalmon;
+    padding: 50px;
+   }
+   .Imaging {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.Imaging img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+   .Skills {
+  padding: 50px;
+  background-color: whitesmoke;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill {
+  width: 30%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.skill img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+
+.skill-description {
+  margin-top: 20px;
+}
+
+.skill-description h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.skill-description p {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+#Hobbies {
+  padding: 50px;
+  background-color: bisque;
+}
+
+.hobby {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.hobby img, .hobby video {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.hobby-description {
+  flex-grow: 1;
+}
+
+.hobby-description h3 {
+  margin-bottom: 10px;
+}
+
+.hobby-description p {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+#contact {
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: center;
+    background-color:beige;
+  }
+
+  fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  legend {
+    font-size: 24px;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button[type="submit"],
+  button[type="reset"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  button[type="submit"]:hover,
+  button[type="reset"]:hover {
+    background-color: #3e8e41;
+  }
+
+  footer {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .social-links {
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-links li {
+    margin-right: 20px;
+  }
+
+  .social-links li:last-child {
+    margin-right: 0;
+  }
+
+  .social-links a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    transition: all 0.3s ease;
+  }
+
+  .social-links a:hover {
+    background-color: #666;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .footer-bottom p {
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  </style>
+  </head>
+  <body></body>
+
+    <div class="Welcome">
+      <div class="container">
+        <h1 class="display-4">Welcome to my personal website</h1>
+        <p class="lead">
+          This is the home of my online presence. Explore my projects, learn
+          about me, and get in touch.
+        </p>
+      </div>
+    </div>
+
+    <div class ="Imaging">
+      <div class = "container">
+        <img src="/Users/manogyaaryal/Desktop/4thSem/ASE220/Chat/assets/img/My picture.jpg">
+        <img src = "/Users/manogyaaryal/Desktop/4thSem/ASE220/Chat/assets/img/IMG_2085.JPG">
+        <img src = "/Users/manogyaaryal/Desktop/4thSem/ASE220/Chat/assets/img/College-prom-mku-spring-formal-2022_55 (1).jpg">
+        <img src = "/Users/manogyaaryal/Desktop/4thSem/ASE220/Chat/assets/img/IMG20201028181342.jpg">
+
+      </div>
+    </div>
+    
+  <div class = "about">
+    <div class="container">
+      <div id="about" class="row">
+        <div class="col-md-12">
+          <h2> About me</h2>
+          <p class="lead">
+            I am a sophomore studying computer science at northern kentucky university.
+          </p>
+          <p class="lead">
+            <h2> My Achievements </h2>
+            Few things in my life that I consider as achievements are:
+          <ol>
+            <li>Campus Recreation Center, Northern Kentucky University · Employee of the year (2022) </li>
+            <li> College of Informatics, Northern Kentucky University · Outstanding Freshman (May 2022) </li>
+            <li>Campus Recreation Center, Northern Kentucky Univeristy · Employee of the month (January 2023)</li>
+            <li> International Office, Northern Kentucky Univeristy ·International Acheiver award (April 2023) </li>
+          </ol>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="Skills">
+    <h2>My Top Three Skills</h2>
+    <div class="container">
+      <div class="skill">
+        <img src="assets/img/Dance.jpeg" alt="Me Dancing" width="150" height="150">
+        <div class="skill-description">
+          <h3>Dancing</h3>
+          <p>I enjoy dancing. It helps me calm down, and whenever I feel like I need a little break from everything, I dance.</p>
+        </div>
+      </div>
+      <div class="skill">
+        <img src="assets/img/Coding.jpeg" alt="Coding" width="150" height="150">
+        <div class="skill-description">
+          <h3>Coding</h3>
+          <p>This is something new to me. Something I started learning since I started my undergrad here. I am slowly developing my skills on it. As semesters pass by, I learn more and more about it. And, the interesting thing is that there is no end point. You can keep learning in this field, and every day there is something new and more interesting in the computer science world.</p>
+        </div>
+      </div>
+      <div class="skill">
+        <img src="assets/img/Communication.jpeg" alt="Communicating" width="150" height="150">
+        <div class="skill-description">
+          <h3>Communicating</h3>
+          <p>My biggest achievement/skill I developed since I got here is learning to communicate. It could be with my professors or my friends or at work. I had a hard time public speaking or communicating in general but I have grown so much in that area.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="Hobbies">
+    <h2>My Favorite Things</h2>
+    
+    <div class="hobby">
+      <img src="assets/img/Conference.JPG" alt="Tri State Women in Computing Conference">
+      <div class="hobby-description">
+        <h3>Attending Tech Conferences</h3>
+        <p>I love attending tech conferences and learning about the latest trends and technologies in the field. It's also a great opportunity to network and meet new people.</p>
+      </div>
+    </div>
+    
+    <div class="hobby">
+      <img src="assets/img/Tango_Charlie.jpeg" alt="My Dogs">
+      <div class="hobby-description">
+        <h3>Spending Time with My Dogs</h3>
+        <p>I have two dogs, Tango and Charlie, who are the best companions I could ask for. They keep me active and always bring a smile to my face.</p>
+      </div>
+    </div>
+    
+    <div class="hobby">
+      <video controls poster="./Baba_me_Dancing.mp4" width="400" height="200">
+        <source src="assets/video/Baba_me_Dancing.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hobby-description">
+        <h3>Dancing</h3>
+        <p>Dancing is one of my favorite hobbies. It's a great way to stay active and express myself creatively. This video is a clip of me dancing to one of my favorite songs with my dad</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="contact">
+    <form method="post" action="https://informatics.plus/fun/form.php" name="addForm" id="addForm">
+      <fieldset>
+        <legend>Contact Me</legend>
+        <label for="custName">Your Name:</label>
+        <input type="text" name="custName" id="custName" required>
+        <label for="custEmail">Your Email:</label>
+        <input type="email" name="custEmail" id="custEmail" required>
+        <label for="custMessage">Your Message:</label>
+        <textarea name="custMessage" id="custMessage" rows="5" required></textarea>
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <h2>My Social</h2>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/manogya-aryal-aa8535238/">LinkedIn</a></li>
+        <li><a href="https://app.joinhandshake.com/stu/users/35628093">Handshake</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Manogya Aryal. All Rights Reserved.</p>
+    </div>
+  </footer>
+  </body>
+</html>
+       
